@@ -50,7 +50,7 @@ public class DeviceManager implements ConnectableDeviceListener {
 
     @Override
     public void onDeviceReady(ConnectableDevice device) {
-        logger.log(Log.INFO, TAG, "onDeviceReady");
+        logger.log(Log.INFO, TAG, "onDeviceReady: " + device.getFriendlyName());
         mDevice = device;
         postDeviceStatus(CastState.CONNECTED, CastDevice.fromConnectableDevice(device));
     }
