@@ -14,6 +14,8 @@ import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
 
+import androidx.core.app.ServiceCompat;
+
 import com.connectsdk.CastState;
 import com.connectsdk.CastStatus;
 import com.connectsdk.ICastStateListener;
